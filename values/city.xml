@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cityname">
+        <item>一支</item>
+        <item>两支</item>
+        <item>十支</item>
+        <item>一箱</item>
+    </string-array>
+
+</resources>
