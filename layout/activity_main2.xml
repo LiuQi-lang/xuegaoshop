@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@drawable/bjt2"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView_cam"
+            android:layout_width="265dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:alpha="20"
+            android:rotationX="0"
+            android:translationY="50dp"
+            app:srcCompat="@drawable/xin1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false">
+
+        <Button
+            android:id="@+id/button_cam"
+            android:layout_width="106dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="14dp"
+            android:backgroundTint="#9FDDE4"
+            android:text="拍照"
+            android:translationX="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/new_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.202"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_cam"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/button_photo"
+            android:layout_width="106dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="63dp"
+            android:layout_marginBottom="14dp"
+            android:backgroundTint="#9FDDE4"
+            android:text="相册"
+            android:translationX="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/new_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/button_cam"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_cam"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/new_user"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:hint="   注册用户名"
+            android:inputType="textPersonName"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/new_passwd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/new_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:hint="    注册密码"
+            android:inputType="numberPassword"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_user" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="返回登录"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:translationX="30dp"
+            app:backgroundTint="#9FDDE4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_passwd" />
+
+        <Button
+            android:id="@+id/logon1"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="注  册"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:translationX="100dp"
+            app:backgroundTint="#9FDDE4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_passwd" />
+    </LinearLayout>
+
+
+</LinearLayout>

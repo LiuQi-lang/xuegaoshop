@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#9FDDE4"
+    android:orientation="vertical"
+    android:translationY="10dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="413dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/a9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="408dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="408dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#F44336"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="243dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/but"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="加入购物车"
+            android:translationX="40dp"
+            app:backgroundTint="#16FFFCFD" />
+
+        <Button
+            android:id="@+id/but2"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#16FFFCFD"
+            android:text="立即订购"
+            android:translationX="100dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#84CCD5"
+    android:orientation="vertical"
+    tools:context=".fragment.Fragment1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:translationY="10dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="86dp"
+            android:layout_height="71dp"
+            android:layout_weight="1"
+            android:src="@drawable/b5" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="69dp"
+            android:layout_height="74dp"
+            android:layout_weight="1"
+            android:src="@drawable/b2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="84dp"
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            android:src="@drawable/b3" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="92dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:src="@drawable/b4"
+            android:translationY="5dp" />
+    </LinearLayout>
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="400dp"
+        android:layout_height="164dp"
+        android:layout_gravity="center"
+        android:translationY="10dp"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints">
+
+    </com.youth.banner.Banner>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:translationY="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bjt2"
+    android:orientation="vertical"
+    android:outlineSpotShadowColor="@android:color/white">
+
+
+    <ImageButton
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="right"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="187dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
+        android:text="用户名 用户须知"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ListView
+        android:id="@+id/lb1"
+        android:layout_width="match_parent"
+        android:layout_height="181dp" />
+
+    <TextView
+        android:id="@+id/userMessage"
+        android:layout_width="370dp"
+        android:layout_height="200dp"
+
+        android:layout_marginTop="100dp"
+
+        android:rotationX="0"
+        android:text="客户信息"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="22sp"
+        android:translationX="15dp"
+        android:translationY="-50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9FDDE4"
+        android:text="进入首页→"
+        android:translationX="50dp" />
+
+    <TextView
+        android:id="@+id/del_user"
+        android:layout_width="112dp"
+        android:layout_height="27dp"
+
+        android:layout_marginStart="280dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginBottom="196dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="注销用户?"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:translationY="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>
